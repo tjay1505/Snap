@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+$fonts :'Epilogue', sans-serif;
+$AlmostWhite: hsl(0, 0%, 98%);
+$MediumGray: hsl(0, 0%, 41%);
+$AlmostBlack: hsl(0, 0%, 8%);
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: $fonts;
+    background-color: $AlmostWhite;
+}
+//snap_header stying
+.snap_header{
+    width: 1cap;
+    height:1.2em ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    //header img styles
+    .header_logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 0.5;
+        img{
+            
+            width: 2em;
+        }
+    }
+    //header menu styling
+    .header_menu{
+        flex-grow: 4;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        a{
+            font-size: 1vmax;
+            text-decoration: none;
+            color: $MediumGray;
+            margin: 0 1%;
+        }
+        //hover effect
+        a:hover{
+            color: $AlmostBlack;
+        }
+        //menu for both
+        .menu{
+            border-radius: 0.5em;
+            background-color:white;
+            box-shadow: 1px 2px 10px 0.1px  rgb(188, 188, 188);
+            margin-top: 1%;
+            display: flex;
+            flex-direction: column;
+            align-items:start;
+            justify-content: center;
+            //span tags here
+            span{
+                margin: 5% 10%;
+                font-size: 0.9vmax;
+            }
+            img{
+                width: 0.9vmax;
+                margin: 0 2px 0 0;
+            }
+        }
+        //list items one
+        .one{
+            display:none;
+            height: 11vmax;
+            width: 9vmax;
+            position: absolute;
+            left: 12vw;
+        } 
+        //list items two
+        .two{
+            display: none;
+            height: 7vmax;
+            width: 7vmax;
+            position: absolute;
+        }
+        
+    }
+    //header_log styling
+    .header_log{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-grow: 0.6;
+        a{
+            font-size: 1vmax;
+            text-decoration: none;
+            color: $MediumGray;
+        }
+        //hover effect
+        a:hover{
+            color: $AlmostBlack;
+        }
+        button{
+            font-size: 1vmax;
+            color: $MediumGray;
+            background-color: $AlmostWhite;
+            border: 0.5px solid $MediumGray;
+            padding: 3%;
+            width: 7vmax;
+            border-radius:1vmax;
+        }
+        button:hover{
+            border: 0.8px solid $AlmostBlack;
+            color: $AlmostBlack;
+        }
+    }
+}
+//main content style for each pharse
+.main_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2vmax;
+    .content_frist{
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            font-size: 5vmax;
+        }
+        p{
+            font-size: 1.2vmax;
+            color: $MediumGray;
+            line-height: 1.5vmax;
+        }
+        a{
+            text-decoration: none;
+            border: 0.1px solid $AlmostBlack;
+            font-size: 1.2vmax;
+            color: $AlmostWhite;
+            background-color: $AlmostBlack;
+            width: 10vmax;
+            height: 3vmax;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3px;
+        }
+        a:hover{
+            background-color: $AlmostWhite;
+            color: $AlmostBlack;
+            border: 0.1px solid $AlmostBlack;
+        }
+        .first_logos{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 7vw;
+                margin: 0.2vmax 1.2vmax;
+            }
+        }
+    }
+    .content_second{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 30vw;
+            
+        }
+    }
+}
+///////////////////////////////////////
+    ///////////////////////////////////////
+        ///////// for mobile view//////////////
+        //////////////////////////////////////////
+             //////////////////////////////////  
+            
+ @media only screen and (max-width: 185px) {
+    body {
+        background-color: lightblue;
+        
+        }
+}

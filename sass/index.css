@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.snap_header {
+  width: 1cap;
+  height: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.snap_header .header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0.5;
+}
+.snap_header .header_logo img {
+  width: 2em;
+}
+.snap_header .header_menu {
+  flex-grow: 4;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.snap_header .header_menu a {
+  font-size: 1vmax;
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  margin: 0 1%;
+}
+.snap_header .header_menu a:hover {
+  color: hsl(0, 0%, 8%);
+}
+.snap_header .header_menu .menu {
+  border-radius: 0.5em;
+  background-color: white;
+  box-shadow: 1px 2px 10px 0.1px rgb(188, 188, 188);
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.snap_header .header_menu .menu span {
+  margin: 5% 10%;
+  font-size: 0.9vmax;
+}
+.snap_header .header_menu .menu img {
+  width: 0.9vmax;
+  margin: 0 2px 0 0;
+}
+.snap_header .header_menu .one {
+  display: none;
+  height: 11vmax;
+  width: 9vmax;
+  position: absolute;
+  left: 12vw;
+}
+.snap_header .header_menu .two {
+  display: none;
+  height: 7vmax;
+  width: 7vmax;
+  position: absolute;
+}
+.snap_header .header_log {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 0.6;
+}
+.snap_header .header_log a {
+  font-size: 1vmax;
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+}
+.snap_header .header_log a:hover {
+  color: hsl(0, 0%, 8%);
+}
+.snap_header .header_log button {
+  font-size: 1vmax;
+  color: hsl(0, 0%, 41%);
+  background-color: hsl(0, 0%, 98%);
+  border: 0.5px solid hsl(0, 0%, 41%);
+  padding: 3%;
+  width: 7vmax;
+  border-radius: 1vmax;
+}
+.snap_header .header_log button:hover {
+  border: 0.8px solid hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 8%);
+}
+
+.main_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2vmax;
+}
+.main_content .content_frist {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main_content .content_frist h2 {
+  font-size: 5vmax;
+}
+.main_content .content_frist p {
+  font-size: 1.2vmax;
+  color: hsl(0, 0%, 41%);
+  line-height: 1.5vmax;
+}
+.main_content .content_frist a {
+  text-decoration: none;
+  border: 0.1px solid hsl(0, 0%, 8%);
+  font-size: 1.2vmax;
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 8%);
+  width: 10vmax;
+  height: 3vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+.main_content .content_frist a:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+  border: 0.1px solid hsl(0, 0%, 8%);
+}
+.main_content .content_frist .first_logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.main_content .content_frist .first_logos img {
+  width: 7vw;
+  margin: 0.2vmax 1.2vmax;
+}
+.main_content .content_second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_content .content_second img {
+  width: 30vw;
+}
+
+@media only screen and (max-width: 185px) {
+  body {
+    background-color: lightblue;
+  }
+}/*# sourceMappingURL=index.css.map */
